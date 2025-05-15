@@ -5,7 +5,9 @@ def fibonacci(n):
         return 1
     else:
         fibArray = [1, 1]
-        for i in range(3, n):
+        result = fibArray[0] + fibArray[1]
+
+        for i in range(2, n):
             result = fibArray[0] + fibArray[1]
             fibArray[0] = fibArray[1]
             fibArray[1] = result
